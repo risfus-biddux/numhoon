@@ -99,6 +99,11 @@
     ::
     dims-calc  +:dims-calc
   ==
+++  scalar-mult
+  |=  [nd=nd-array scalar=@]
+  =.  flat.nd
+  (turn flat.nd |=(a/@ (mul a scalar)))
+  nd
 ++  matrix-mult
   :: 2d only
   ::
